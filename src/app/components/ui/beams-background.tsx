@@ -174,7 +174,7 @@ export function BeamsBackground({
             <canvas
                 ref={canvasRef}
                 className="absolute inset-0"
-                style={{ filter: "blur(15px)" }}
+                style={{ filter: "blur(15px)",  position: "fixed", top: 0, left: 0 }}
             />
 
             <motion.div
@@ -192,7 +192,7 @@ export function BeamsBackground({
                 }}
             />
 
-            <div className="relative z-10 flex h-screen w-full items-center justify-center">
+            <div className="relative z-10 flex min-h-screen w-full flex-col  items-center justify-center">
                 {children}
             </div>
         </div>
